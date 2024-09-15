@@ -130,6 +130,7 @@ main {
   bottom: 20px;
   left: 20px;
   font-weight: bold;
+  font-size: 13px;
   color: rgb(174, 177, 181);
   transition: all 0.3s ease;
   box-shadow: 0 0 8px 4px #ccc;
@@ -307,32 +308,11 @@ textarea {
   text-align: center;
 }
 
-@media(max-width:768px) {
-  #location {
-    margin-top: 100px;
-  }
-}
-
-@media(min-width:768px) {
-  .mainmiddle {
-    width: 100%;
-    margin-left: 50px;
-    margin-right: 50px;
-  }
-
-}
-
-@media(min-width:1280px) {
-  .mainmiddle {
-    width: 100%;
-    margin-left: 300px;
-    margin-right: 100px;
-  }
 
   #spots {
     width: 100%;
   }
-}
+
 .grid.sl{
   transform: translateX(-400px);
 }
@@ -367,3 +347,65 @@ header.scrolled{
     opacity: 1;
     
   }
+  @media(min-width:365px) {
+    li {
+     font-size: 15px;}
+
+    #location {
+      margin-top: 100px;
+    }
+    .spot {
+      
+      width: 150px;
+      height: 150px;
+    }
+    
+   
+    .spot-text {
+      font-size: 8px;
+      width:100%;
+    
+      
+    
+    }
+    
+    
+    
+    
+    
+    .picLr {
+     
+      width: 150px;
+      height:150px;
+      object-fit: cover;
+      overflow: hidden;
+    
+    }
+    
+    .picRl {
+      width:150px;
+      height:150px;
+      object-fit: cover;
+      overflow: hidden;
+    
+    }
+    
+
+  }
+  
+  @media screen and (min-width:365px) and (min-width: 768px)  {
+    .mainmiddle {
+      width: 100%;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+  
+  }
+  
+  @media(min-width:1280px) {
+    .mainmiddle {
+      width: 100%;
+      margin-left: 300px;
+      margin-right: 100px;
+    }
+  }  
